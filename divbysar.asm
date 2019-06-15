@@ -1,0 +1,9 @@
+MOV [3000h],50h
+
+MOV AL,[3000h]
+
+SAR AL,02d
+
+MOV [1002h],AL
+
+RET

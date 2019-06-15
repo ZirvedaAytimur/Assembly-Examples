@@ -1,0 +1,14 @@
+MOV [1000h],5h
+
+MOV AL,[1000h]
+MOV AH,00h
+MOV BX,AX
+
+SHL AX,04d
+SHL BX,01d
+
+ADD AX,BX
+
+MOV [1002h],AX
+
+RET
